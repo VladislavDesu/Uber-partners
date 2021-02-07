@@ -1,0 +1,55 @@
+.slider {
+   position: relative;
+   min-height: 397px;
+   padding-top: 214px;
+   background-image: url("../images/pattern.png");
+
+   &__container {
+      position: absolute;
+      top: -267px;
+      left: 50%;
+      transform: translateX(-50%);
+   }
+
+   &__text {
+      margin-bottom: 0;
+      font-size: 17px;
+      line-height: 24px;
+      color: #222222;
+      text-align: center;
+   }
+
+   &__slide {
+      max-width: 100%;
+      height: auto;
+   }
+}
+
+@media (max-width: 564px) {
+   .slider {
+      padding-top: 80px;
+      min-height: auto;
+      padding-bottom: 40px;
+
+      &__container {
+         top: -210px;
+         left: auto;
+         transform: none;
+      }
+   }
+}
+
+@media (max-width: 768px) {
+   .slider {
+      padding-top: 200px;
+      min-height: auto;
+      padding-bottom: 40px;
+
+      &__container {
+         top: -210px;
+         left: auto;
+         transform: none;
+      }
+   }
+}
+

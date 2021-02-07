@@ -1,0 +1,220 @@
+.footer {
+   position: relative;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   min-height: 156px;
+   padding: 0 24px;
+
+   &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 8px;
+      background-color: #070716;
+   }
+
+   &__socials {
+      display: flex;
+      margin-bottom: 25px;
+   }
+
+   &__social {
+      width: 32px;
+      height: 32px;
+      margin-right: 8px;
+      font-size: 0;
+      background-color: #070716;
+      border-radius: 50%;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      &:last-child {
+         margin-right: 0;
+      }
+
+      &--fb {
+         background-image: url("../images/fb.png");
+      }
+
+      &--tw {
+         background-image: url("../images/tw.png");
+      }
+
+      &--in {
+         background-image: url("../images/in.png");
+      }
+
+      &--inst {
+         background-image: url("../images/inst.png");
+      }
+   }
+
+   &__nav {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: 140px;
+      padding-top: 13px;
+      text-transform: uppercase;
+
+      &::before {
+         content: "";
+         position: absolute;
+         top: -21px;
+         left: 50%;
+         width: 299px;
+         height: 4px;
+         background-color: #1fbad6;
+         transform: translateX(-50%);
+      }
+   }
+
+   &__navigation {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+
+      & a {
+         margin-right: 45px;
+         font-weight: 300;
+         font-size: 15px;
+         line-height: 1.2;
+         color: #070716;
+
+         &:last-child {
+            margin-right: 0;
+         }
+      }
+   }
+
+   &__info {
+      display: flex;
+      justify-content: space-between;
+
+      & a {
+         margin-right: 20px;
+         font-weight: 300;
+         font-size: 11px;
+         line-height: 1.2;
+         color: #999999;
+
+         &:last-child {
+            margin-right: 0;
+         }
+      }
+   }
+
+   &__lang {
+      font-size: 11px;
+      color: #1fbad6;
+
+      &:hover,
+      &:focus {
+         color: #1fbad6;
+      }
+   }
+
+   &__downloads {
+      display: flex;
+      margin-bottom: 30px;
+   }
+
+   &__download {
+      width: 94px;
+      height: 26px;
+      margin-right: 6px;
+      font-size: 0;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      &:last-child {
+         margin-right: 0;
+      }
+
+      &--apple-store {
+         background-image: url("../images/apple-store.png");
+      }
+
+      &--google-play {
+         background-image: url("../images/google-play.png");
+      }
+
+      &--windows-store {
+         background-image: url("../images/windows-store.png");
+      }
+   }
+}
+
+@media (max-width: 568px) {
+   .footer {
+      flex-direction: column;
+      padding-top: 20px;
+      padding-bottom: 20px;
+
+      &__downloads {
+         flex-direction: column;
+         margin-bottom: 0;
+      }
+
+      &__socials {
+         margin-bottom: 10px;
+      }
+
+      &__download {
+         margin-right: 0;
+         margin-bottom: 6px;
+      }
+
+      &__nav {
+         margin-left: 0;
+         padding: 30px 0;
+
+         &::before {
+            top: 0;
+         }
+      }
+
+      &__navigation {
+         flex-wrap: wrap;
+
+         & a {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 5px;
+            text-align: center;
+         }
+      }
+
+      &__info {
+         flex-wrap: wrap;
+
+         & a {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 5px;
+            text-align: center;
+         }
+      }
+   }
+}
+
+@media (max-width: 1050px) {
+   .footer {
+      flex-direction: column;
+      padding-top: 20px;
+      padding-bottom: 20px;
+
+      &__nav {
+         margin-left: 0;
+         padding: 30px 0;
+
+         &::before {
+            top: 0;
+         }
+      }
+   }
+}
